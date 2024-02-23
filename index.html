@@ -37,12 +37,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/main.js"></script>
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="logo">
-        <a href="#"><img src="" alt="" width="144" /></a>
+        <a href="#"
+          ><img
+            src="./images/common/logo_niniz.png"
+            alt="niniz로고"
+            width="144"
+        /></a>
       </div>
       <ul class="gnb">
         <li>
@@ -69,7 +76,7 @@
     <!-- 풀페이지 -->
     <div id="smooth-wrapper">
       <div id="smooth-content">
-        <div id="main">
+        <div class="main">
           <!-- 메인페이지 -->
           <div class="sec-01">
             <div class="_desktop">
@@ -85,15 +92,15 @@
                 </div>
               </div>
               <div class="layoutbox">
-                <div class="layout layout01">
-                  <p class="lp">JORDY</p>
+                <div class="layout layout-01">
+                  <p class="lt">JORDY</p>
                   <div class="img">
                     <img
                       src="./images/main/jordy/jordy_1_hi.png"
                       style="overflow: visible"
-                      width="490"
-                      height="638"
-                      alt=""
+                      width="439"
+                      height="364"
+                      alt="카카오 니니즈의 죠르디캐릭터"
                       transform="matrix(1 0 0 1 26.8944 0)"
                     />
                   </div>
@@ -106,15 +113,15 @@
                     <p>DINOSAUR</p>
                   </div>
                 </div>
-                <div class="layout layout02">
-                  <p class="lp">JORDY</p>
+                <div class="layout layout-02">
+                  <p class="lt">JORDY</p>
                   <div class="img">
                     <img
                       src="./images/main/jordy/jordy_1_hi.png"
                       style="overflow: visible"
-                      width="490"
-                      height="638"
-                      alt=""
+                      width="439"
+                      height="364"
+                      alt="카카오 니니즈의 죠르디캐릭터"
                       transform="matrix(1 0 0 1 26.8944 0)"
                     />
                   </div>
@@ -124,11 +131,11 @@
                     <p>SOON</p>
                   </div>
 
-                  <div class="wo2">
+                  <div class="word-2">
                     자취생 죠르디의 관찰예능 숏폼 영상 ‘자취왕 죠르디’
                   </div>
 
-                  <dl class="wo3">
+                  <dl class="word-3">
                     <dt>
                       <div>
                         <div class="in">
@@ -157,16 +164,16 @@
           </div>
           <!-- 소개영상 -->
           <div class="sec-02">
-            <div class="film">
+            <div class="video-bg">
               <div></div>
             </div>
 
-            <div class="vibox">
+            <div class="videobox">
               <button class="playBtn"></button>
               <div class="iframe">
                 <iframe
-                  width="1250"
-                  height="703"
+                  width="850px"
+                  height="478px"
                   src="https://www.youtube.com/embed/mwvvQqLaFyA"
                   title="[I&#39;m JORDY] 죠르디입니다 | Ep.01 안녕하세요, 죠르디입니다"
                   frameborder="0"
@@ -207,184 +214,58 @@
               </p>
             </div>
             <div class="img-box">
-              <img src="./images/main/contents/contents_1.png" alt="" />
-              <img src="./images/main/contents/contents_2.png" alt="" />
-              <img src="./images/main/contents/contents_3.png" alt="" />
+              <img
+                class="img img01"
+                src="./images/main/contents/contents_1.png"
+                alt=""
+              />
+              <img
+                class="img img02"
+                src="./images/main/contents/contents_2.png"
+                alt=""
+              />
+              <img
+                class="img img03"
+                src="./images/main/contents/contents_3.png"
+                alt=""
+              />
             </div>
           </div>
-          <!-- 굿즈소개 -->
+          <!-- 굿즈소개 ok 03-->
           <div class="sec-05">
             <div class="text-box">
               <div class="sec-tit">다양한 굿즈들</div>
               <div class="sub-tit">귀여운 민트색 공룡, 죠르디</div>
-              <p>설명</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                beatae fugit, et incidunt rem, cupiditate voluptate adipisci
+                ipsa neque ullam ratione cum quia non? Est blanditiis distinctio
+                quod eum nisi.
+              </p>
             </div>
-            <div class="llb">
-              <h4 class="h4">
-                <p>SHOPPING</p>
-              </h4>
-              <ul class="lbx">
-                <li class="left logos">
-                  <div class="itb">
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy1.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy2.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy3.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy4.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy5.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy6.png);
-                      "
-                    ></div>
-                  </div>
-                  <div class="itb">
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy1.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy2.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy3.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy4.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy5.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy6.png);
-                      "
-                    ></div>
-                  </div>
-                </li>
-                <li class="right logos">
-                  <div class="itb">
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy7.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy8.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy9.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy10.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy11.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy12.png);
-                      "
-                    ></div>
-                  </div>
-                  <div class="itb">
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy7.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy8.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy9.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy10.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy11.png);
-                      "
-                    ></div>
-                    <div
-                      class="item"
-                      style="
-                        background-image: url(./images/main/goods/jordy12.png);
-                      "
-                    ></div>
-                  </div>
-                </li>
-              </ul>
+            <div class="img-container">
+              <div class="imgbox imgbox-01">
+                <img src="./images/main/goods/jordy1.png" alt="" />
+                <img src="./images/main/goods/jordy2.png" alt="" />
+                <img src="./images/main/goods/jordy3.png" alt="" />
+                <img src="./images/main/goods/jordy4.png" alt="" />
+              </div>
+              <div class="imgbox imgbox-02">
+                <img src="./images/main/goods/jordy5.png" alt="" />
+                <img src="./images/main/goods/jordy6.png" alt="" />
+                <img src="./images/main/goods/jordy7.png" alt="" />
+                <img src="./images/main/goods/jordy8.png" alt="" />
+              </div>
+              <div class="imgbox imgbox-01">
+                <img src="./images/main/goods/jordy9.png" alt="" />
+                <img src="./images/main/goods/jordy11.png" alt="" />
+                <img src="./images/main/goods/jordy12.png" alt="" />
+              </div>
             </div>
           </div>
-          <!-- 시즌1 소개 -->
-          <div class="sec06">
+
+          <!-- 시즌1 소개 ok 04-->
+          <div class="sec-06">
             <div class="lasy">
               <div class="fl">
                 <div class="tbx">
