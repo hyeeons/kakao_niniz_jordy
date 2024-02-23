@@ -1757,7 +1757,7 @@ body {
       }
 
       .word {
-        font-size: 14.0625vw;
+        font-size: 13vw;
         font-weight: 900;
         width: 100%;
         height: 100vh;
@@ -2077,7 +2077,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 10vw;
     .text-box {
       text-align: center;
       img {
@@ -2103,7 +2103,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 10vw;
     position: relative;
 
     .text-box {
@@ -2152,8 +2152,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 10vw;
     position: relative;
+    height: 100vh;
+    overflow: hidden;
     .text-box {
       .sec-tit {
         font-size: 3.75rem;
@@ -2175,10 +2177,37 @@ body {
     .img-container {
       display: flex;
       padding: 0 30px;
-
+      gap: 0.625rem;
+      .imgbox {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+      }
+      .imgbox-01 {
+        animation: goodsup 30s linear infinite;
+      }
+      .imgbox-02 {
+        animation: goodsdown 30s linear infinite;
+      }
       img {
         width: 150px;
         border-radius: 5px;
+      }
+    }
+    @keyframes goodsup {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+    @keyframes goodsdown {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateY(100%);
       }
     }
   }
@@ -2195,7 +2224,7 @@ body {
 
     .fl {
       height: 100vh;
-      padding: 0 0 0 9.6354166667vw;
+      padding: 0 0 0 10vw;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
