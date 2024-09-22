@@ -1,414 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="format-detection"
       content="telephone=no, address=no, email=no"
-    />
+    >
     <meta
       name="description"
       content="카카오 니니즈의 죠르디 소개 사이트입니다."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="카카오 죠르디 소개 사이트" />
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="카카오 죠르디 소개 사이트">
     <meta
       property="og:description"
       content="카카오 니니즈의 죠르디 소개 사이트입니다."
-    />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
+    >
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
 
     <title>카카오 죠르디 홈페이지</title>
     <!-- css -->
-    <link rel="icon" type="image/png" href="" />
+    <link rel="icon" type="image/png" href="">
     <link
       rel="stylesheet"
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css /comm.css" />
+    >
+    <link rel="stylesheet" href="./assets/css/comm.css">
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- swiper -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"
     ></script>
-    <script type="module" src="main.js"></script>
     <script defer src="./assets/js/main.js"></script>
   </head>
   <body>
-    <!-- header -->
-    <header class="header">
-      <div class="logo">
-        <a href="#"
-          ><img
-            src="./images/common/logo_niniz.png"
-            alt="niniz로고"
-            width="144"
-        /></a>
-      </div>
-      <ul class="gnb">
-        <li>
-          <a href="#">ABOUT</a>
-        </li>
-        <li>
-          <a href="#">PRODUCTS</a>
-        </li>
-        <li>
-          <a href="#">NEWS</a>
-        </li>
-        <li>
-          <a href="" class="inquiryBtn">INQUIRY</a>
-        </li>
-      </ul>
 
-      <div class="storebox">
-        <div class="store">
-          <a href="#" target="_blank">STORE<img src="" alt="" /></a>
-        </div>
-      </div>
-    </header>
-    <!-- fullpage header생략 -->
-    <!-- 풀페이지 -->
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <div class="main">
-          <!-- 메인페이지 -->
-          <div class="sec-main">
-            <div class="_desktop">
-              <div class="scroll-box">
-                <div class="scroll">
-                  <div class="line">
-                    <div class="circle"></div>
-                    <div class="arrow">
-                      <img src="./images/common/icon_scroll_arrow.png" alt="" />
-                    </div>
-                  </div>
-                  <p>SCROLL</p>
-                </div>
-              </div>
-              <div class="layoutbox">
-                <div class="layout layout-01">
-                  <p class="lt">JORDY</p>
-                  <div class="img">
-                    <img
-                      src="./images/main/jordy/jordy_1_hi.png"
-                      style="overflow: visible"
-                      width="439"
-                      height="364"
-                      alt="카카오 니니즈의 죠르디캐릭터"
-                      transform="matrix(1 0 0 1 26.8944 0)"
-                    />
-                  </div>
-                  <div class="word">
-                    <p>JORDY</p>
-                    <p>STORY</p>
-                  </div>
-                  <div class="word">
-                    <p>IT's</p>
-                    <p>DINOSAUR</p>
-                  </div>
-                </div>
-                <div class="layout layout-02">
-                  <p class="lt">JORDY</p>
-                  <div class="img">
-                    <img
-                      src="./images/main/jordy/jordy_1_hi.png"
-                      style="overflow: visible"
-                      width="439"
-                      height="364"
-                      alt="카카오 니니즈의 죠르디캐릭터"
-                      transform="matrix(1 0 0 1 26.8944 0)"
-                    />
-                  </div>
-
-                  <div class="word">
-                    <p>COMMING</p>
-                    <p>SOON</p>
-                  </div>
-
-                  <div class="word-2">
-                    자취생 죠르디의 관찰예능 숏폼 영상 ‘자취왕 죠르디’
-                  </div>
-
-                  <dl class="word-3">
-                    <dt>
-                      <div>
-                        <div class="in">
-                          2023.11.20
-                          <div class="typ"></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="in">
-                          매주 월~ 금 오후 1시
-                          <div class="typ"></div>
-                        </div>
-                      </div>
-                    </dt>
-                    <dd>
-                      <div>
-                        자취생 죠르디의 관찰예능 숏폼 영상 ‘자취왕 죠르디’
-                      </div>
-                    </dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-
-            <div class="_mobile"></div>
-          </div>
-          <!-- 소개영상 -->
-          <div class="sec-video">
-            <div class="video-bg">
-              <div></div>
-            </div>
-            <div class="vidcontain">
-              <div class="videobox">
-                <button class="playBtn"></button>
-                <div class="iframe">
-                  <iframe
-                    width="850px"
-                    height="478px"
-                    src="https://www.youtube.com/embed/mwvvQqLaFyA"
-                    title="[I&#39;m JORDY] 죠르디입니다 | Ep.01 안녕하세요, 죠르디입니다"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 캐릭터소개 -->
-          <div class="sec-niniz">
-            <div class="text-box">
-              <img src="./images/common/logo_niniz.png" alt="" />
-              <div class="text">
-                <p>
-                  카카오의 두번째 캐릭터 니니즈는<br />
-                  동물을 모티브로 한 8종의 캐릭터로<br />
-                  자유분방하고 다채로운 매력을 통해<br />
-                  1020 세대와 깊은 공감대를 형성하고 있습니다.
-                </p>
-              </div>
-            </div>
-            <img src="./images/main/contents/contents_4_niniz.png" alt="" />
-          </div>
-          <!-- 컨텐츠소개 -->
-          <div class="sec-contents">
-            <div class="text-box">
-              <div class="sec-tit">죠르디 JORDY</div>
-              <div class="sub-tit">빙하에서 깨어난 취준공룡</div>
-              <p>
-                빛나는 과거를 뒤로한 채 현재는 안정적인 직장에 취업하는 것을
-                목표로 하루하루 열심히 살아가는 ‘취준 공룡’입니다. 귀여운 외모와
-                열심히 살아가는 모습으로 사람들의 공감대와 사랑을 받고 있으며
-                애니메이션, 다양한 책, 팝업스토어 등으로 사람들과 유대감을 쌓고
-                있습니다. 2022년에는 니니즈 캐릭터 중 처음으로 숏 애니메이션
-                ‘죠르디 입니다’를 선보였으며 약 900만회에 가까운 조회수를
-                기록했습니다.
-              </p>
-            </div>
-            <div class="img-box">
-              <img
-                class="img img01"
-                src="./images/main/contents/contents_1.png"
-                alt=""
-              />
-              <img
-                class="img img02"
-                src="./images/main/contents/contents_2.png"
-                alt=""
-              />
-              <img
-                class="img img03"
-                src="./images/main/contents/contents_3.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <!-- 굿즈소개 ok 03-->
-          <div class="sec-goods">
-            <div class="text-box">
-              <div class="sec-tit">다양한 굿즈들</div>
-              <div class="sub-tit">귀여운 민트색 공룡, 죠르디</div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                beatae fugit, et incidunt rem, cupiditate voluptate adipisci
-                ipsa neque ullam ratione cum quia non? Est blanditiis distinctio
-                quod eum nisi.
-              </p>
-            </div>
-            <div class="img-container">
-              <div class="imgbox imgbox-01">
-                <img src="./images/main/goods/jordy1.png" alt="" />
-                <img src="./images/main/goods/jordy2.png" alt="" />
-                <img src="./images/main/goods/jordy3.png" alt="" />
-                <img src="./images/main/goods/jordy4.png" alt="" />
-              </div>
-              <div class="imgbox imgbox-02">
-                <img src="./images/main/goods/jordy5.png" alt="" />
-                <img src="./images/main/goods/jordy6.png" alt="" />
-                <img src="./images/main/goods/jordy7.png" alt="" />
-                <img src="./images/main/goods/jordy8.png" alt="" />
-              </div>
-
-              <div class="imgbox imgbox-01">
-                <img src="./images/main/goods/jordy9.png" alt="" />
-                <img src="./images/main/goods/jordy11.png" alt="" />
-                <img src="./images/main/goods/jordy12.png" alt="" />
-                <img src="./images/main/goods/jordy3.png" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <!-- 시즌1 소개 ok 04-->
-          <div class="sec-season1">
-            <div class="lasy">
-              <div class="text-box">
-                <div class="sec-tit">시즌1</div>
-                <div class="sub-tit">죠르디입니다!</div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  beatae fugit, et incidunt rem, cupiditate voluptate adipisci
-                  ipsa neque ullam ratione cum quia non? Est blanditiis
-                  distinctio quod eum nisi.
-                </p>
-              </div>
-              <div class="imgbox">
-                <ul class="ibx">
-                  <li>
-                    <div class="img">
-                      <img src="./images/main/season1/ep1.jpg" alt="" />
-                    </div>
-                    <div class="text">EP1</div>
-                  </li>
-                  <li>
-                    <div class="img">
-                      <img src="./images/main/season1/ep2.jpg" alt="" />
-                    </div>
-                    <div class="text">EP2</div>
-                  </li>
-                  <li>
-                    <div class="img">
-                      <img src="./images/main/season1/ep3.jpg" alt="" />
-                    </div>
-                    <div class="text">EP3</div>
-                  </li>
-                  <li>
-                    <div class="img">
-                      <img src="./images/main/season1/ep4.jpg" alt="" />
-                    </div>
-                    <div class="text">EP4</div>
-                  </li>
-                  <li>
-                    <div class="img">
-                      <img src="./images/main/season1/ep5.jpg" alt="" />
-                    </div>
-                    <div class="text">EP5</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 시즌2 소개 -->
-        <div class="sec-season2">
-          <div class="bg-box">
-            <div class="bg-01">
-              <img src="./images/main/jordy/jordy_2_season2.gif" alt="" />
-            </div>
-            <div class="bg-02">
-              <img src="./images/main/contents/contents_5.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- 보도자료 -->
-        <div class="sec-notice">
-          <h3 class="h3">
-            <p>News</p>
-          </h3>
-
-          <div class="layoutbox">
-            <ul class="list">
-              <li>
-                <a href="#" data-img="">
-                  <p class="date">2023-12-17</p>
-                  <div class="textbox">
-                    <h5 class="notice-title">
-                      카카오 보도자료 들어갈 자리입니다.
-                    </h5>
-                    <div class="arrow">
-                      <img src="#" alt="" />
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-img="">
-                  <p class="date">2023-12-17</p>
-                  <div class="textbox">
-                    <h5 class="notice-title">
-                      카카오 보도자료 들어갈 자리입니다.
-                    </h5>
-                    <div class="arrow">
-                      <img src="#" alt="" />
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-img="">
-                  <p class="date">2023-12-17</p>
-                  <div class="textbox">
-                    <h5 class="notice-title">
-                      카카오 보도자료 들어갈 자리입니다.
-                    </h5>
-                    <div class="arrow">
-                      <img src="#" alt="" />
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" data-img="">
-                  <p class="date">2023-12-17</p>
-                  <div class="textbox">
-                    <h5 class="notice-title">
-                      카카오 보도자료 들어갈 자리입니다.
-                    </h5>
-                    <div class="arrow">
-                      <img src="#" alt="" />
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <div class="btnlist">
-              <a href="#" class="btn"
-                >MORE
-                <img src="#" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 풋터 -->
-        <footer id="footer">
-          <div class="ft-info"></div>
-          <div class="ft-goto"></div>
-        </footer>
-      </div>
-    </div>
   </body>
 </html>
