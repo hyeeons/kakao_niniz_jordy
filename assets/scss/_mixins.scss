@@ -1,0 +1,62 @@
+//  폰트
+
+// extrabold
+@mixin extrabold-240 {
+	font-size: 15rem;
+	font-weight: 800;
+ }
+ @mixin extrabold-70 {
+	font-size: 4.375rem;
+	font-weight: 800;
+ }
+ @mixin extrabold-65 {
+	font-size: 4.0625rem;
+	font-weight: 800;
+ }
+
+ @mixin extrabold-60 {
+	font-size: 3.75rem;
+	font-weight: 800;
+	line-height: 110%;
+ }
+ @mixin extrabold-40 {
+	font-size: 2.5rem;
+	font-weight: 800;
+ }
+
+//  bold
+ @mixin bold-40 {
+	font-size: 2.5rem;
+	font-weight: 700;
+ }
+ @mixin bold-35 {
+	font-size: 1.5625rem;
+	font-weight: 700;
+ }
+ @mixin bold-25 {
+	font-size: 1.5625rem;
+	font-weight: 700;
+ }
+ @mixin bold-20 {
+	font-size: 1.25rem;
+	font-weight: 700;
+ }
+
+//  semibold
+@mixin semibold-45 {
+	font-size: 2.8125rem;
+	font-weight: 600;
+}
+@mixin semibold-30 {
+	font-size: 1.875rem;
+	font-weight: 600;
+}
+@mixin medium-32 {
+	font-size: 2rem;
+	font-weight: 500;
+}
+@mixin medium-30 {
+	font-size: 1.875rem;
+	font-weight: 500;
+}
+
