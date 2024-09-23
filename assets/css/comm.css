@@ -226,7 +226,6 @@ input[type=password] {
 caption,
 legend {
   overflow: hidden;
-  position: absolute;
   width: 0;
   height: 0;
   line-height: 0;
@@ -279,4 +278,270 @@ legend {
 html,
 body {
   font-family: "Noto Sans KR", sans-serif !important;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+#logo {
+  background-image: url(../../images/common/logo_niniz.png);
+  width: 149px;
+  height: 89px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav-list {
+  display: flex;
+  gap: 70px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 2.8125rem 0;
+}
+
+#main {
+  background: #f4f4f4;
+}
+
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sec-scroll {
+  position: relative;
+  height: 7000px;
+}
+.sec-scroll .jordy-img {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  height: 350px;
+  margin: 278px auto 400px;
+}
+.sec-scroll .jordy-img img {
+  height: 100%;
+}
+.sec-scroll .jordy-txt .text {
+  font-size: 15rem;
+  font-weight: 800;
+  line-height: 110%;
+  text-align: center;
+}
+.sec-scroll .jordy-txt .text p {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sec-scroll .jordy-txt .text p:first-child {
+  z-index: 500;
+}
+.sec-scroll .jordy-txt .text p:last-child {
+  margin-top: 250px;
+  z-index: 1500;
+}
+.sec-scroll .jordy-txt .text-2 p {
+  top: 1000px;
+}
+.sec-scroll .jordy-txt .text-3 p {
+  top: 2000px;
+}
+
+.jordy-img {
+  display: none;
+}
+
+.sec-niniz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15vw 5vw;
+}
+.sec-niniz .text-box {
+  text-align: center;
+}
+.sec-niniz .text-box img {
+  width: 149px;
+  height: 90px;
+}
+.sec-niniz .text-box .text {
+  margin-top: 45px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+.sec-niniz img {
+  width: 45%;
+  height: 45%;
+}
+
+.sec-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15vw 5vw;
+  position: relative;
+  overflow: hidden;
+}
+.sec-contents .text-box {
+  text-align: left;
+  width: 45%;
+}
+.sec-contents .text-box .sec-tit {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+.sec-contents .text-box .sub-tit {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.sec-contents .text-box p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.sec-contents .img-box .img01 {
+  width: 40%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.sec-contents .img-box .img02 {
+  width: 40%;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+.sec-contents .img-box .img03 {
+  width: 30%;
+  position: absolute;
+  top: 60%;
+  right: 30%;
+}
+
+.sec-goods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10vw 10vw;
+  position: relative;
+  overflow: hidden;
+}
+.sec-goods .text-box .sec-tit {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+.sec-goods .text-box .sub-tit {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.sec-goods .text-box p {
+  font-size: 15px;
+  font-weight: 500;
+  width: 440px;
+}
+.sec-goods .img-container {
+  display: flex;
+  padding: 0 30px;
+  gap: 0.625rem;
+}
+.sec-goods .img-container .imgbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.sec-goods .img-container .imgbox-01 {
+  animation: goodsup 30s linear infinite;
+}
+.sec-goods .img-container .imgbox-02 {
+  animation: goodsdown 30s linear infinite;
+}
+.sec-goods .img-container img {
+  width: 150px;
+  border-radius: 5px;
+}
+@keyframes goodsup {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes goodsdown {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.sec-season1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+  position: relative;
+  overflow: hidden;
+}
+.sec-season1 .text-box .sec-tit {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+.sec-season1 .text-box .sub-tit {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.sec-season1 .text-box p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  width: 440px;
+}
+
+.sec-season2 .bg-01 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #feceda 0%, #feced9 31%, #ffdfd4 45%, #fee5d0 55%, #fee9ce 67%, #fee5d0 88%);
+}
+.sec-season2 .bg-01 img {
+  position: absolute;
+  width: 18.75rem;
+  top: 25%;
+  left: 40%;
+}
+.sec-season2 .bg-02 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #fee5d0 0%, #ffdfd4 44%, #feceda 100%);
+  text-align: center;
+}
+.sec-season2 .bg-02 img {
+  width: 55.625rem;
+}
+
+.bg-02 {
+  display: none;
 }/*# sourceMappingURL=comm.css.map */

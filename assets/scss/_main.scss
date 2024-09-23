@@ -1,0 +1,288 @@
+// header
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 200px;
+}
+
+#logo {
+	background-image: url(../../images/common/logo_niniz.png);
+	width: 149px;
+	height: 89px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.nav-list {
+	display: flex;
+	gap: 70px;
+	@include bold-20;
+	padding: 2.8125rem 0;
+}
+
+#main {
+	background: $bg-f4;
+}
+.wrap {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+// sec-scroll
+.sec-scroll {
+	position: relative;
+	height: 7000px;
+	.jordy-img {
+		position: fixed;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1000;
+		// width: 430px;
+		height: 350px;
+		img {
+			height: 100%;
+		}
+		margin: 278px auto 400px;
+	}
+	.jordy-txt {
+		// position: absolute;
+		// top: 150px;
+		// left: 50%;
+		// transform: translateX(-50%);
+		.text {
+			@include extrabold-240;
+			text-align: center;
+			p {
+				position: absolute;
+				top: 150px;
+				left: 50%;
+				transform: translateX(-50%);
+				&:first-child {
+					z-index: 500;
+				}
+				&:last-child {
+					margin-top: 250px;
+					z-index: 1500;
+				}
+			}
+		}
+		.text-2 {
+			p {
+			top: 1000px;
+			}
+		}
+		.text-3 {
+			p {
+				top: 2000px;
+			}
+		}
+
+	}
+}
+.jordy-img {
+	display: none;
+}
+// sec-video
+
+
+// 니니즈 소개
+.sec-niniz {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15vw 5vw;
+	// padding: 15vw 10vw;
+	.text-box {
+	  text-align: center;
+	  img {
+		width: 149px;
+		height: 90px;
+	  }
+	  .text {
+		margin-top: 45px;
+		@include semibold-24;
+		color: $txtDefult;
+		text-align: center;
+	  }
+	}
+	img {
+	  width: 45%;
+	  height: 45%;
+	}
+  }
+
+//   컨텐츠
+.sec-contents {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15vw 5vw;
+	position: relative;
+	overflow: hidden;
+	.text-box {
+	  text-align: left;
+	  width: 45%;
+	  .sec-tit {
+		@include extrabold-60;
+		margin-bottom: 10px;
+	  }
+	  .sub-tit {
+		@include bold-25;
+		margin-bottom: 5px;
+	  }
+	  p {
+		@include medium-15;
+	  }
+	}
+	.img-box {
+	  .img01 {
+		width: 40%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+	  }
+	  .img02 {
+		width: 40%;
+		position: absolute;
+		top: 20%;
+		right: 0;
+	  }
+	  .img03 {
+		width: 30%;
+		position: absolute;
+		top: 60%;
+		right: 30%;
+	  }
+	}
+  }
+// 굿즈
+  .sec-goods {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10vw 10vw;
+	position: relative;
+	overflow: hidden;
+	.text-box {
+	  .sec-tit {
+		font-size: 3.75rem;
+		font-weight: 800;
+		line-height: 110%;
+		margin-bottom: 10px;
+	  }
+	  .sub-tit {
+		font-size: 25px;
+		font-weight: 700;
+		margin-bottom: 5px;
+	  }
+	  p {
+		font-size: 15px;
+		font-weight: 500;
+		width: 440px;
+	  }
+	}
+	.img-container {
+	  display: flex;
+	  padding: 0 30px;
+	  gap: 0.625rem;
+	  .imgbox {
+		display: flex;
+		flex-direction: column;
+		gap: 0.625rem;
+	  }
+	  .imgbox-01 {
+		animation: goodsup 30s linear infinite;
+	  }
+	  .imgbox-02 {
+		animation: goodsdown 30s linear infinite;
+	  }
+	  img {
+		width: 150px;
+		border-radius: 5px;
+	  }
+	}
+	@keyframes goodsup {
+	  0% {
+		transform: translateX(0);
+	  }
+	  100% {
+		transform: translateY(-100%);
+	  }
+	}
+	@keyframes goodsdown {
+	  0% {
+		transform: translateX(0);
+	  }
+	  100% {
+		transform: translateY(100%);
+	  }
+	}
+  }
+
+// 시즌1 소개
+.sec-season1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10vw;
+	position: relative;
+	overflow: hidden;
+	.text-box {
+	  .sec-tit {
+		@include extrabold-60;
+		margin-bottom: 10px;
+	  }
+	  .sub-tit {
+		@include bold-25;
+		margin-bottom: 5px;
+	  }
+	  p {
+		@include medium-15;
+		width: 440px;
+	  }
+	}
+
+}
+
+// 시즌2 소개
+.sec-season2 {
+	.bg-01 {
+	  position: relative;
+	  width: 100%;
+	  height: 100vh;
+	  background: linear-gradient(
+		180deg,
+		#feceda 0%,
+		#feced9 31%,
+		#ffdfd4 45%,
+		#fee5d0 55%,
+		#fee9ce 67%,
+		#fee5d0 88%
+	  );
+	  img {
+		position: absolute;
+		width: 18.75rem;
+		top: 25%;
+		left: 40%;
+	  }
+	}
+	.bg-02 {
+	  width: 100%;
+	  height: 100vh;
+	  background: linear-gradient(180deg, #fee5d0 0%, #ffdfd4 44%, #feceda 100%);
+	  text-align: center;
+	  img {
+		width: 55.625rem;
+	  }
+	}
+}
+// 공지사항
+
+.bg-02 {
+	display: none;
+}

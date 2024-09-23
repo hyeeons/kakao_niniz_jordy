@@ -37,15 +37,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- swiper -->
     <script
-      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"
     ></script>
     <script defer src="./assets/js/main.js"></script>
   </head>
   <body>
-	<header id="hedaer">
-		<h1 id="logos">NINIZ</h1>
-		<nav id="gnb">
+	<header id="header">
+		<h1 id="logo" class="blind">NINIZ</h1>
+		<nav id="gnb" class="gnb">
 			<ul class="nav-list">
 				<li class="nav-list-depth"><a href="#">ABOUT JORDY</a></li>
 				<li class="nav-list-depth"><a href="#">PRODUCTS</a></li>
@@ -55,23 +54,24 @@
 		</nav>
 	</header>
 	<main id="main">
+		<div class="wrap">
 		<!-- 인트로 스크롤 -->
 		<div class="sec-scroll">
 			<div class="jordy-img">
 				<img src="./images/main/jordy/jordy_1_hi.png" alt="죠르디하이">
-				<div class="jordy-txt">
-					<div class="text-1">
-						<p>JORDY</p>
-						<p>STORY</p>
-					</div>
-					<div class="text-2">
-						<p>IT'S</p>
-						<p>DINOSAUR</p>
-					</div>
-					<div class="text-3">
-						<p>COMMING</p>
-						<p>SOON</p>
-					</div>
+			</div>
+			<div class="jordy-txt">
+				<div class="text text-1">
+					<p>JORDY</p>
+					<p>STORY</p>
+				</div>
+				<div class="text text-2">
+					<p>IT'S</p>
+					<p>DINOSAUR</p>
+				</div>
+				<div class="text text-3">
+					<p>COMMING</p>
+					<p>SOON</p>
 				</div>
 			</div>
 		</div>
@@ -101,7 +101,8 @@
 					1020 세대와 깊은 공감대를 형성하고 있습니다.
 				  </p>
 				</div>
-			  </div>
+			</div>
+			<img src="./images/main/contents/contents_4_niniz.png" alt="" />
 		</div>
 		<!-- 컨텐츠 -->
 		<div class="sec-contents">
@@ -173,8 +174,8 @@
 		<!-- 시즌1 소개 -->
 		<div class="sec-season1">
 			<div class="text-box">
-				<h2>시즌1</h2>
-				<h3>죠르디입니다!</h3>
+				<h2 class="sec-tit">시즌1</h2>
+				<h3 class="sub-tit">죠르디입니다!</h3>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
 					beatae fugit, et incidunt rem, cupiditate voluptate adipisci
@@ -243,6 +244,7 @@
 				</ul>
 			</div>
 		</div>
+	</div>
 	</main>
 	<footer id="footer"></footer>
 

@@ -4,6 +4,8 @@
 @mixin extrabold-240 {
 	font-size: 15rem;
 	font-weight: 800;
+	line-height: 110%;
+
  }
  @mixin extrabold-70 {
 	font-size: 4.375rem;
@@ -51,12 +53,22 @@
 	font-size: 1.875rem;
 	font-weight: 600;
 }
+@mixin semibold-24 {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+// medium
 @mixin medium-32 {
 	font-size: 2rem;
 	font-weight: 500;
 }
 @mixin medium-30 {
 	font-size: 1.875rem;
+	font-weight: 500;
+}
+@mixin medium-15 {
+	font-size: .9375rem;
 	font-weight: 500;
 }
 
